@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*h1+p{*/
+        /*  color: coral;*/
+        /*}*/
+        h1 ~ p {
+            color: coral;
+        }
+
+        div span {
+            color: cornflowerblue;
+        }
+
+        div > p > span {
+            color: cornflowerblue;
+        }
+
+        div > div > p {
+            color: hotpink;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sed.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sed.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sed.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sed.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sed.</p>
+<div>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem <span>ipsum dolor</span> sit.</p>
+    <div>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum dolor.</p>
+    </div>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+</div>
+</body>
+</html>

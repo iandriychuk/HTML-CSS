@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form sup {
+            color: red;
+        }
+
+        /*input {*/
+        /*    width: 150px;*/
+        /*}*/
+        textarea {
+            resize: none;
+            width: 150px
+        }
+
+        .form-registration {
+            border: 3px solid lightgreen;
+            width: 30%;
+            border-radius: 20px;
+            padding: 50px;
+        }
+
+        input[type="text"] {
+            background-color: lightyellow;
+            border: 2px solid lightblue;
+            border-radius: 2px;
+            color: cornflowerblue;
+        }
+
+        input[type="text"]::placeholder {
+            color: white;
+        }
+
+        input[type="text"]:focus{
+            outline: 2px solid lightpink;
+        }
+
+    </style>
+</head>
+<body>
+<form class="form-registration">
+    <label for="name">Fill in your name</label>
+    <input type="text" name="name" id="name" placeholder="name" required> <sup>*</sup>
+
+    <label for="email">Fill in your email</label>
+    <input type="email" name="name" id="email" placeholder="example@gmail.com" required> <sup>*</sup>
+
+    <label for="password">Fill in your password</label>
+    <input type="password" name="password" id="password" placeholder="qwerty" required> <sup>*</sup>
+
+    <label for="age">Fill in your age</label>
+    <input type="number" name="age" id="age" min="18" max="99">
+
+    <label>Fill in your sex</label>
+    <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+
+    <label>
+        <input type="checkbox" name="newsletter"> Subscribe to our newsletter
+    </label>
+
+    <label>Country</label>
+    <select id="country">
+        <option>Choose country</option>
+        <option value="ukraine">Ukraine</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+    </select>
+
+    <label for="phone"></label>
+    <select id="phone">
+        <optgroup label="Apple">
+            <option value="iphone13">IPhone 13</option>
+            <option value="iphone14">IPhone 14</option>
+            <option value="iphone15">IPhone 15</option>
+        </optgroup>
+        <optgroup label="Android">
+            <option value="iphone13">IPhone 13</option>
+            <option value="iphone14">IPhone 14</option>
+            <option value="iphone15">IPhone 15</option>
+        </optgroup>
+    </select>
+
+    <label for="comment"></label>
+    <textarea id="comment" cols="30" rows="4"></textarea>
+
+    <div>
+        <input type="submit" value="Sent">
+        <input type="reset" value="Cancel">
+    </div>
+</form>
+</body>
+</html>
